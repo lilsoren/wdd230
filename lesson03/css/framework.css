@@ -1,0 +1,28 @@
+/* header */
+
+
+.flex-nav ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #0050a6;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+li{
+    padding: 5px;
+}
+
+
+@media screen and (min-width: 48rem){
+    .flex-nav ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* footer */
+footer{
+    text-align: center;
+}

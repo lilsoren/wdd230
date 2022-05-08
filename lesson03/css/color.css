@@ -1,0 +1,33 @@
+
+
+
+/* header */
+.flex-nav ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #0050a6;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+li{
+    padding: 5px;
+}
+
+
+/* main */
+
+
+.primary{
+    color: #e05726;
+}
+.secondary{
+    color: #0050a6;
+}
+.typography{
+    color: #605f5e;
+}
+
+
+

@@ -4,7 +4,7 @@
 .flex-nav ul{
     display: flex;
     flex-direction: column;
-    background-color: #0050a6;
+    background-color: #b8d4f1;
     align-items: center;
     justify-content: space-around;
     color: white;
@@ -22,7 +22,3 @@ li{
     }
 }
 
-/* footer */
-footer{
-    text-align: center;
-}

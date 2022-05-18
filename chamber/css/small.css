@@ -1,0 +1,172 @@
+/* setting the colors */
+:root {
+    --orange: #e05726;
+    --blue: #0050a6;
+    --light-blue: #caf0f8;
+    --grey: #605f5e;
+  }
+
+.social{
+    gap: 1em;
+}
+
+nav{
+    background-color: var(--blue)
+}
+nav button{
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+nav button:hover{
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li a{
+    display: flex;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, .5);
+}
+
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, .3)
+}
+
+nav ul{
+    display: none;
+}
+nav ul.open{
+    display: block;
+}
+
+
+/* Formats the header above the nav */
+.header-flex{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+.top-header{
+    display: flex;
+    flex-direction: row;
+    justify-items: end;
+    align-items: end;
+    justify-content: space-between;
+}
+img{
+    padding: 10px;
+    margin-top: -100px;
+    z-index: -100;
+}
+.social{
+    display: flex;
+    padding: 10px;
+}
+
+
+/* date */
+.date{
+    background: var(--light-blue);
+    padding: 1em;
+    border: 1px solid var(--orange);
+    color: var(--grey);
+    text-align: center;
+}
+
+/* social media icons */
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+
+
+
+/* hides the X when */
+#hamburger span:nth-child(1){
+    display: block;
+}
+#hamburger span:nth-child(2){
+    display: none;
+}
+
+/* hides the hamburger bun icon */
+#hamburger.open span:nth-child(1){
+    display: none;
+}
+#hamburger.open span:nth-child(2){
+    display: block;
+}
+
+
+
+
+
+
+  /* Main Section */
+main p, .spotlights{
+    background-color: var(--light-blue);
+    border: 1px solid var(--grey);
+    min-height: 200px;
+    color: var(--grey);
+}
+.spot-1, .spot-2{
+    margin: 1em;
+}
+main{
+    margin: 1em;
+    z-index: 100;
+}
+
+.spot-3{
+    display: none;
+}
+
+.join{
+    display: none;
+}
+
+
+/* Footer */
+footer{
+    text-align: center;
+}
+footer img{
+    margin: 0;
+}
+

@@ -1,13 +1,22 @@
 /* header */
 /* this will remain the same for all pages*/
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .flex-nav ul{
     display: flex;
     flex-direction: column;
-    background-color: #b8d4f1;
+    background-color: #0050a6;
     align-items: center;
     justify-content: space-around;
     color: white;
+    padding: 40px;
+    list-style-type: none;
+    margin-bottom: 50px;
 }
 
 li{
@@ -22,3 +31,30 @@ li{
     }
 }
 
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* main */
+.flex-main{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2, p{
+    padding: 10px;
+}
+
+
+
+
+/* footer */
+footer{
+    padding: 50px;
+    text-align: center;
+}

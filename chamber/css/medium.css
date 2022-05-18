@@ -1,0 +1,33 @@
+@media only screen and (min-width:660px){
+    
+    nav ul li a{
+        padding: .7rem 1rem
+    }
+
+
+
+    /* Main Section */
+    .join{
+        display: revert;
+    }
+    .event-weather{
+        display: flex;   
+        column-gap: 1em;  
+        margin-top: -15px;
+        margin-bottom: -15px; 
+    }
+    .weather{
+        width: 40%;
+    }
+    .event{
+        width: 60%;
+    }
+    .spotlights{
+        display: flex;
+    }
+    .spot-1, .spot-2{
+        width: 50%;
+    }
+}
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Build</title>
+
+
+    <!-- Links to CSS files that are used -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <header class="flex-nav">
+        <div class="header-flex">
+            <div class="top-header">
+                <img src="images/logo.jpg" alt="Logo Image" width="200">
+                <div class="social">
+                    <!-- Add font awesome icons -->
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+
+                    <nav>
+                        <!--navigation links-->
+                        <button id="hamburger"><span>&#9776</span><span>X</span></button>
+                    </nav>
+                </div>
+            </div>
+
+
+            <!-- current date -->
+            <div class="date"></div>
+
+            <nav>
+                <!--navigation links-->
+                <ul id="navigation">
+                    <li><a href="index.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+        
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+   
+
+
+
+
+    <main>
+        <div class="column-2">
+            <p class="hero">Hero with site name and call to action</p>
+            <p class="news">News Release</p>
+        </div>
+
+
+        <div class="column-1">
+            <div class="event-weather">
+                <p class="event" >Event</p>
+                <p class="weather">Weather</p>
+            </div>
+                <p class="join">Join</p>
+        </div>
+
+        <div class="column-3">
+            <div class="spotlights">
+                <p class="spot-1">Spotlight 1</p>
+                <p class="spot-2">Spotlight 2</p>
+                <p class="spot-3">Spotlight 3</p>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <footer>
+        <img src="images/logo.jpg" alt="Logo Image" width="200">
+        <p>info.aldie@thevillage.com</p>
+        <p>Find on Map<a
+                href="https://www.google.com/maps/place/Aldie,+VA+20105/@38.971177,-77.6375405,15z/data=!3m1!4b1!4m5!3m4!1s0x89b66ae2241962f3:0x15a8739d0328a1c8!8m2!3d38.9756745!4d-77.6418724"></a>
+        </p>
+
+        <!-- base footer -->
+        <!--copyright, site name, your name, "WDD 230 Project", last mod-->
+
+        <p>&copy; <span id='date'></span></p>
+        <p>Aldie The Village</p>
+        <p>Lily Sorensen</p>
+        <p>WDD 230 Project</p>
+        <p>Last modified: <span id="lastmod"></span></p>
+
+    </footer>
+    <script src="js/navigation.js"></script>
+
+</body>
+
+</html>

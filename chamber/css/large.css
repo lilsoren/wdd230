@@ -17,90 +17,78 @@
         display: revert;
     }
 
-
-    main{
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        gap: 1em;
-        column-gap: 1em;
-    }
-    .column-1, .column-2, .column-3{
-        display: flex;
-        flex-direction: column;
-    }
-
-    
     
 
-
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
 
 /* event weather and join */
-    .column-1{
-        order: -1;
-        gap: 1em;
-    }
-
-    .event-weather{
-        flex-direction: column;
-        margin: inherit;
-        display: inherit;
-        column-gap: inherit;
-        
-    }
-    .join{
-        flex-grow: 1;
-        margin: 0;
-    }
-    .event{
-        flex-grow: 1;
-        width: 100%;
-        margin: 0;
-        margin-bottom: 1em;
-    }
-    .weather{
-        flex-grow: 1;
-        width: 100%;
-        margin: 0;
-
-    }
    
-
-
-/* column ratios */
-    .column-1, .column-3{
-        flex-grow: 1;
-    }
-    .column-2{
-        flex-grow: 2;
-        gap: 1em;
-    }
-
+    .event-weather{
+    flex-direction: column;
+    margin: inherit;
+    display: inherit;
+    column-gap: inherit;
     
-    /* hero and news */
-    .hero{
-        flex-grow: 2;
-        margin: 0px;
-    }
-    .news{
-        flex-grow: 1;
-        margin: 0px;
-    }
-    
-    
+}
 
-    /* spotlights */
-   .spotlights p{
-       margin: 1em;
-   }
-   .column-3{
-    gap: 1em;
-   }
-   .spotlights{
-        display: flex;
-        flex-direction: column;
-   }
-    .spot-1, .spot-2{
-        width: inherit;
-    }
+.column-1{
+    grid-column: 1/2;
+    grid-row: 1;
+    margin-top: -8px;
+
+}
+
+.event{
+    width: revert;
+}
+.weather{
+    width: revert;
+}
+.join{
+    
+} 
+
+
+
+/* hero and news */
+
+.column-2{
+    grid-column: 2/3;
+    margin-top: -16px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.hero{
+   min-height: 452px;
+}
+.news{
+    min-height: 200px;
+} 
+
+
+
+/* spotlights */
+.spotlights p{
+    margin: 1em;
+}
+.column-3{
+    grid-column: 3/4;
+    grid-row: 1;
+}
+.spotlights{
+    display: flex;
+    flex-direction: column;
+    height: 704px;
+}
+.spot-1, .spot-2{
+    width: inherit;
+}
+.spot-1, .spot-2, .spot-3{
+    margin: revert;
+    padding: revert;
+}
 }

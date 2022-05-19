@@ -80,7 +80,7 @@ img{
 .date{
     background: var(--light-blue);
     padding: 1em;
-    border: 1px solid var(--orange);
+    border: 2px solid var(--orange);
     color: var(--grey);
     text-align: center;
 }
@@ -141,9 +141,10 @@ img{
   /* Main Section */
 main p, .spotlights{
     background-color: var(--light-blue);
-    border: 1px solid var(--grey);
+    border: 2px solid var(--orange);
     min-height: 200px;
     color: var(--grey);
+    padding: 1em;
 }
 .spot-1, .spot-2{
     margin: 1em;

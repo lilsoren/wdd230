@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page Build</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+
 
     <!-- Links to CSS files that are used -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -16,6 +20,10 @@
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@500&display=swap" rel="stylesheet">
 
 
 </head>
@@ -40,6 +48,7 @@
 
             <!-- current date -->
             <div class="date"></div>
+            <div class="meeting-notice"></div>
 
             <nav>
                 <!--navigation links-->
@@ -59,35 +68,70 @@
     <main>
         <section class="column-2">
 
-            <section id="hero">
-                <p class="hero">Hero with site name and call to action</p>
-            </section>
+            <div id="hero">
+                <!-- <h3 class="welcome">Welcome to Aldie</h3>
+                <p class="chamber">Join the Chamber</p> -->
+                <img id="hero-img" src="images/750x.webp" alt="Hero Image"
+                srcset="images/3000x.webp 3000x,
+                        images/1500x.webp 1500x,
+                        images/1000x.webp 1000x,
+                        images/750x.webp 750x,
+                        images/400x.webp 400x,"
+                size="(max-width:47.5rem) 100vw, 50vw">        
+            </div>
 
-            <section id="news">
-                <p class="news">News Release</p>
-            </section>
+            <div id="news">
+                <h3 class="news">Breaking News</h3>
+                <p>"It wasn't my fault" says Tommy Jones</p>
+                <p>Young man finds himself trapped in his washign machine for the third time this month. Will he ever be free from this upsetting curcumstance? Find out for yourself.<p>
+            </div>
         </section>
 
 
         <section class="column-1">
-            <div class="event-weather">
-                <!-- <section id="event"> -->
-                    <p class="event">Event</p>
-                <!-- </section> -->
-                <!-- <section id="weather"> -->
-                    <p class="weather">Weather</p>
-                <!-- </section> -->
-            </div>
-            <!-- <section id="join"> -->
-                <p class="join">Join</p>
-            <!-- </section> -->
+            <section class="event-weather">
+                    <div id="event">
+                        <h3 class="news">County Fair</h3>
+                        <p>The Miller Farm</p>
+                        <p>Join us for the annual county fair Saturday at 1:00 p.m.<p>
+                    </div>
+                    <div id="weather">
+                        <img src="images/weather.webp" alt="Weather Image" width="100px">
+                        <h3 class="weather">Weather</h3>
+                        <p>72</p>
+                        <p>precipitation: 13%</p>
+                        <p>Wind Speed: 4mph</p>
+                        
+                    </div>
+                </section>
+                    <div id="join">
+                        <h3 class="join">Join Us!</h3>
+                        <p>Learn how joining the chamber can benifit you and your community</p>
+                    </div>
+                
         </section>
 
         <section class="column-3">
             <div class="spotlights">
-                <p class="spot-1">Spotlight 1</p>
-                <p class="spot-2">Spotlight 2</p>
-                <p class="spot-3">Spotlight 3</p>
+                <div id="spot-1">
+                    <h3 class="spot-1">Code A Block</h3>
+                    <img src="images/computer.webp" alt="Computer Icon" width="90px">
+                    <p>Learn, Code, Run</p>
+                    <p>After school coding programming for ages 8-18</p>
+                </div>
+                    
+                <div id="spot-2">
+                    <h3 class="spot-2">Lawn and Services</h3>
+                    <img src="images/lawn.webp" alt="Lawnmower" width="120px">
+                    <p>"Lawn too long? We can fix that!"</p>
+                </div>
+                
+                <div id="spot-3">
+                    <h3 class="spot-3">Food Drive</h3>
+                    <img src="images/food.webp" alt="Food Icon" width="100px">
+                    <p>Support those in need</p>
+                </div>
+                
             </div>
         </section>
 
@@ -98,15 +142,16 @@
     <footer>
         <img src="images/logo.jpg" alt="Logo Image" width="200">
         <p>info.aldie@thevillage.com</p>
-        <p>Find on Map<a
-                href="https://www.google.com/maps/place/Aldie,+VA+20105/@38.971177,-77.6375405,15z/data=!3m1!4b1!4m5!3m4!1s0x89b66ae2241962f3:0x15a8739d0328a1c8!8m2!3d38.9756745!4d-77.6418724"></a>
+        <p>Find on Map
+            <a href="https://www.google.com/maps/place/Aldie,+VA+20105/@38.971177,-77.6375405,15z/data=!3m1!4b1!4m5!3m4!1s0x89b66ae2241962f3:0x15a8739d0328a1c8!8m2!3d38.9756745!4d-77.6418724">
+            </a>
         </p>
 
         <!-- base footer -->
         <!--copyright, site name, your name, "WDD 230 Project", last mod-->
 
-        <p>&copy; <span id='date'></span></p>
-        <p>Aldie The Village | Lily Sorensen | WDD 230 Project</p>
+        <p></p>
+        <p>&copy; <span id='date'></span> | Aldie The Village | Lily Sorensen | WDD 230 Project</p>
         <p>Last modified: <span id="lastmod"></span></p>
 
     </footer>

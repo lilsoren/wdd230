@@ -65,7 +65,7 @@ nav ul.open{
     align-items: end;
     justify-content: space-between;
 }
-img{
+.top-header img, footer img{
     padding: 10px;
     margin-top: -100px;
     z-index: -100;
@@ -139,26 +139,100 @@ img{
 
 
   /* Main Section */
-main p, .spotlights{
+main div, .spotlights{
     background-color: var(--light-blue);
     border: 2px solid var(--orange);
     min-height: 200px;
     color: var(--grey);
     padding: 1em;
-}
-.spot-1, .spot-2{
     margin: 1em;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 20px;
+    z-index: -1;
+}
+/* h3{
+    font-family: Raleway;
+    font-size: 20px;
+} */
+p{
+    z-index: 1;
+    font-family: Lora;
+    font-size: 16px;
 }
 main{
     margin: 1em;
     z-index: 100;
 }
 
-.spot-3{
+
+
+
+
+
+
+/* hero */
+#hero{
+    position: relative;
+    padding: 0px;
+}
+#hero h3{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.column-2 #hero .chamber{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    background: var(--orange);
+    color: white;
+    width: 9em;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: center;
+
+}
+#hero img{
+    float: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+/* spot-1 */
+
+
+
+/* weather */
+#weather{
+    position: relative;
+}
+#weather img{
+    z-index: -2;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+}
+
+
+
+#spot-1, #spot-2{
+    background-color: var(--light-blue);
+    border: 2px solid var(--orange);
+    min-height: 200px;
+    color: var(--grey);
+    padding: 1em;
+    z-index: 0;
+}
+
+
+#spot-3{
     display: none;
 }
 
-.join{
+#join{
     display: none;
 }
 

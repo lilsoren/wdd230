@@ -10,11 +10,14 @@
     nav ul#navigation{
         display: flex;
         margin-left: 2vw;
-        border-left: 1px solid rgba(0,0,0,0,1);
+        
     }
 
     nav ul li a{
-        padding: .5rem 1rem
+        padding: .5rem 1rem;
+    }
+    nav ul li a:hover{
+        background-color: rgba(0, 0, 0, .2);
     }
 
     .spot-3{
@@ -72,8 +75,8 @@
     min-height: 452px;
     }
     #hero-img{
-        max-width: auto;
-        height: 100%;
+        width: auto;
+        max-height: 100%;
         object-fit: cover;
     }
 

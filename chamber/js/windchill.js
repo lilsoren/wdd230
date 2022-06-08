@@ -16,5 +16,8 @@ function builtWC(speed, temp){
     wc = (wc > temp) ? temp : wc;
 
     //display the windchill
-    feelTemp.innerHTML = "Feels like: " + wc + "º";
+    if (speed > 3 && temp < 50)
+        feelTemp.innerHTML = "Feels like: " + wc + "º";
+    else
+    feelTemp.innerHTML = "No wind chill";
 }

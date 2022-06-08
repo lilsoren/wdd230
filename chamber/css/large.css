@@ -103,6 +103,7 @@
     }
 
     #spot-1, #spot-2, #spot-3{
+        position: relative;
         z-index: 1;
         display: revert;
         width: inherit;
@@ -112,9 +113,12 @@
     }
 
     #spot-1 img, #spot-2 img, #spot-3 img{
+        position: relative;
         z-index: -2;
         margin-top: -35px;
         margin-bottom: -30px;
+        height: 80px;
+        width: auto;
     }
 
     .spot-1, .spot-2, .spot-3{

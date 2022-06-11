@@ -58,6 +58,7 @@ nav ul.open{
     padding: 1rem;
     justify-content: space-evenly;
 }
+
 .top-header{
     display: flex;
     flex-direction: row;
@@ -65,11 +66,13 @@ nav ul.open{
     align-items: end;
     justify-content: space-between;
 }
+
 .top-header img, footer img{
     padding: 10px;
     margin-top: -100px;
     z-index: -100;
 }
+
 .social{
     display: flex;
     padding: 10px;
@@ -114,9 +117,6 @@ nav ul.open{
     color: white;
   }
 
-
-
-
 /* hides the X when */
 #hamburger span:nth-child(1){
     display: block;
@@ -136,8 +136,6 @@ nav ul.open{
 
 
 
-
-
   /* Main Section */
 main div, .spotlights{
     background-color: var(--light-blue);
@@ -151,36 +149,30 @@ main div, .spotlights{
     font-size: 20px;
     z-index: -1;
 }
-/* h3{
-    font-family: Raleway;
-    font-size: 20px;
-} */
+
 p{
     z-index: 1;
     font-family: Lora;
     font-size: 16px;
 }
+
 main{
     margin: 1em;
     z-index: 100;
 }
-
-
-
-
-
-
 
 /* hero */
 #hero{
     position: relative;
     padding: 0px;
 }
+
 #hero h3{
     position: absolute;
     top: 10px;
     right: 20px;
 }
+
 .column-2 #hero .chamber{
     position: absolute;
     bottom: 10px;
@@ -192,20 +184,18 @@ main{
     border-radius: 10px;
 
 }
+
 #hero img{
     width: 100%;
     height: 100%;
     margin: 0px;
 }
 
-/* spot-1 */
-
-
-
 /* weather */
 #weather{
     position: relative;
 }
+
 #weather img{
     z-index: -2;
     position: absolute;
@@ -213,8 +203,6 @@ main{
     left: 10%;
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
 }
-
-
 
 #spot-1, #spot-2{
     background-color: var(--light-blue);
@@ -225,7 +213,6 @@ main{
     z-index: 0;
 }
 
-
 #spot-3{
     display: none;
 }
@@ -234,12 +221,23 @@ main{
     display: none;
 }
 
-
 /* Footer */
 footer{
     text-align: center;
 }
 footer img{
     margin: 0;
+}
+
+/*----------------*/
+/* Directory Page */
+/*----------------*/
+#main-directory{
+    display: flex;
+    flex-direction: column;
+}
+
+#main-directory img:hover{
+    box-shadow: 0px 0px 10px black;
 }
 

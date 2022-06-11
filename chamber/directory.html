@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Build</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+
+
+    <!-- Links to CSS files that are used -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header class="flex-nav">
+        <div class="header-flex">
+            <div class="top-header">
+                <img src="images/logo.jpg" alt="Logo Image" width="200">
+                <div class="social">
+                    <!-- Add font awesome icons -->
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+
+                    <nav>
+                        <!--navigation links-->
+                        <button id="hamburger"><span>&#9776;</span><span>X</span></button>
+                    </nav>
+                </div>
+            </div>
+
+
+            <!-- current date -->
+            <div class="date"></div>
+            <div class="meeting-notice"></div>
+
+            <nav>
+                <!--navigation links-->
+                <ul id="navigation">
+                    <li><a href="index.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+       
+
+    </header>
+
+
+
+    <main id="main-directory">
+       
+
+            <div id="pond">
+                <img src="images/grey-img.jpeg" data-src="images/d-pond.webp" alt="pond image" width="150">
+                <h3>Ponds</h3>
+                <p>There are over 7 ponds in Aldie. All of which are exceptionally popular with the local fishermen. </p>
+            </div>
+
+            <div id="house">
+                <img src="images/grey-img.jpeg" data-src="images/d-house.webp" alt="house image" width="150">
+                <h3 class="house">Friendly Neighborhoods</h3>
+                <p>The average age of people in this community is 35 years old. 40% of the residents are children. The median household income is $106,000 per year.</p>
+            </div>
+        
+            <div id="mill">
+                <img src="images/grey-img.jpeg" data-src="images/d-mill.webp" alt="mill image" width="150">
+                <h3 class="mill">Wind Mill</h3>
+                <p>Aldie saves energy with its use of wind mills. These wind mills power grocery stores, local schools, and homeless shelters. </p>
+            </div>
+
+            <div id="tower">
+                <img src="images/grey-img.jpeg" data-src="images/d-tower.webp" alt="tower image" width="150">
+                <h3 class="tower">Water Tower</h3>
+                <p>Aldie's historical water tower is over 100 years old and is still in use to this day!</p>  
+            </div>
+       
+            <div id="tree">
+                <img src="images/grey-img.jpeg" data-src="images/d-tree.webp" alt="pond image" width="150">
+                <h3 class="tree">Trees</h3>
+                <p>Come enjoy Aldie's many nature walks and experience the beautiful variety of trees. All of which are native to Aldie.  </p>
+            </div>
+                
+
+      
+
+
+
+
+    </main>
+    <footer>
+
+        <!-- <p><span  class="label">Number of Visits: </span><span class="visits"></span></p>
+        <p>Current Page Load Timestamp: <span class="today"></span> in milliseconds.</p> -->
+        <p> <span class="lastVisited"></span></p>
+
+        <img src="images/logo.jpg" alt="Logo Image" width="200">
+        <p>info.aldie@thevillage.com</p>
+        <p>Find on Map
+            <a href="https://www.google.com/maps/place/Aldie,+VA+20105/@38.971177,-77.6375405,15z/data=!3m1!4b1!4m5!3m4!1s0x89b66ae2241962f3:0x15a8739d0328a1c8!8m2!3d38.9756745!4d-77.6418724">
+            </a>
+        </p>
+
+        <!-- base footer -->
+        <!--copyright, site name, your name, "WDD 230 Project", last mod-->
+
+        <p></p>
+        <p>&copy; <span id='date'></span> | Aldie The Village | Lily Sorensen | WDD 230 Project</p>
+        <p>Last modified: <span id="lastmod"></span></p>
+
+    </footer>
+    <script src="js/navigation.js"></script>
+    <script src="js/lazy.js"></script>
+
+</body>
+
+</html>

@@ -22,7 +22,6 @@ if('IntersectionObserver' in window){
         loadImages(item.target);
         imgObserver.unobserve(item.target);
       }
-
     });
   }, imgOptions);
 
@@ -36,5 +35,3 @@ else{
     loadImages(img);
   });
 }
-
-

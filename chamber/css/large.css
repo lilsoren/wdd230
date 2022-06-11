@@ -9,13 +9,13 @@
 
     nav ul#navigation{
         display: flex;
-        margin-left: 2vw;
-        
+        margin-left: 2vw;   
     }
 
     nav ul li a{
         padding: .5rem 1rem;
     }
+
     nav ul li a:hover{
         background-color: rgba(0, 0, 0, .2);
     }
@@ -24,8 +24,6 @@
         display: revert;
     }
 
-    
-
     main{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
@@ -33,20 +31,17 @@
 
     /* event weather and join */
     
-        .event-weather{
-        flex-direction: column;
-        margin: inherit;
-        display: inherit;
-        column-gap: inherit;
-        
+    .event-weather{
+    flex-direction: column;
+    margin: inherit;
+    display: inherit;
+    column-gap: inherit;  
     }
 
     .column-1{
         grid-column: 1/2;
         grid-row: 1/4;
         margin-top: -8px;
-        
-
     }
 
     #event{
@@ -56,11 +51,6 @@
         width: revert;
         margin-left: 16px;
     }
-    #join{
-        
-    } 
-
-
 
     /* hero and news */
 
@@ -74,6 +64,7 @@
     #hero{
     min-height: 452px;
     }
+
     #hero-img{
         width: auto;
         max-height: 100%;
@@ -83,8 +74,6 @@
     #news{
         min-height: 200px;
     } 
-
-
 
     /* spotlights */
     .spotlights div{
@@ -124,4 +113,15 @@
     .spot-1, .spot-2, .spot-3{
         z-index: 1;
     }
+
+    /*----------------*/
+    /* Directory Page */
+    /*----------------*/
+    #main-directory{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+
 }
+

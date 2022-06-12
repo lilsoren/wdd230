@@ -1,0 +1,64 @@
+:root {
+	--back: rgba(127,185,194,255);
+  --back2: rgba(97,140,166,255);
+  --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,33%);
+	--shadow: rgba(110,148,173,255);
+	--even: rgba(232,255,237,255);
+	--odd: rgba(230,240,237,255);
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow:  5px 45px 10px var(--shadow);
+	border-collapse: collapse;
+	font-family: Ubuntu, sans-serif;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	background-color: var(--back);
+	color: var(--foredark);
+	font-size: .85rem;
+}
+
+tr:first-child th {
+	background-color: var(--back);
+	color: var(--foredark);
+	font-size: 1.85rem;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	background-color: var(--back2);
+	color: var(--forelight);
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--even);
+}
+
+tbody tr:nth-child(odd){
+	background-color: var(--odd);
+}
+
+#outlier{
+	background-color: var(--back2);
+	color: var(--forelight);
+}
+
+#black-friday{
+	font-style: italic;
+}

@@ -4,8 +4,6 @@
         padding: .7rem 1rem
     }
 
-
-
     /* Main Section */
     #join{
         display: revert;
@@ -33,6 +31,16 @@
     #spot-1, #spot-2{
         width: 50%;
     }
+
+
+    /*----------------*/
+    /* Join Page */
+    /*----------------*/
+    .form-box label{
+        display: block;
+        text-align: left;
+    }
 }
+
 
 

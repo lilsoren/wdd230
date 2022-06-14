@@ -122,6 +122,30 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
+    /*----------------*/
+    /* Join Page */
+    /*----------------*/
+    #main-join div{
+        display: flex;
+    }
+    .form-box{
+      flex-direction: row;
+    }
+    .form-box label{
+        flex-basis: 7rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .form-box button{
+        margin-left: 7rem;
+    }
+    .form-box input, 
+    .form-box select, 
+    .form-box textarea{
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }   
 
 }
 

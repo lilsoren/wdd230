@@ -24,7 +24,7 @@
         display: revert;
     }
 
-    main{
+    #index-main{
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
     }
@@ -125,7 +125,7 @@
     /*----------------*/
     /* Join Page */
     /*----------------*/
-    #main-join div{
+    #main-join{
         display: flex;
     }
     .form-box{
@@ -145,7 +145,13 @@
         flex-basis: 0;
         flex-grow: 1;
         flex-shrink: 1;
-    }   
+    } 
+    form{
+        width: 100%;
+    }  
+    #div-join{
+        grid-column: 1/4;
+    }
 
 }
 

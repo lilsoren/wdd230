@@ -1,0 +1,67 @@
+{
+    "cards": [
+        {
+          "name": "Paige's Plants",
+          "address": "123 Paige ln",
+          "phone": "208-351-0225",
+          "website": "planter.com",
+          "imageurl": ""
+        },
+        {
+          "name": "Chad's Sunny G's",
+          "address": "456 Chad st",
+          "phone": "208-356-4173",
+          "website": "sunnyg.com",
+          "imageurl": ""
+        },
+        {
+          "name": "Taco Tuesday",
+          "address": "678 Taco ct",
+          "phone": "208-359-8726",
+          "website": "taco.com",
+          "imageurl": ""
+        },
+        {
+          "name": "Car Wash Wednesday",
+          "address": "987 Washer ln.",
+          "phone": "208-360-0338",
+          "website": "carwash.com",
+          "imageurl": ""
+        },
+        {
+          "name": "Thirsty Thursday Soda Shop",
+          "address": "654 Soft Drink st",
+          "phone": "208-390-9040",
+          "website": "soda.com",
+          "imageurl": ""
+        },
+        {
+          "name": "Fictional Friday Library",
+          "address": "486 Book ln",
+          "phone": "208-656-1454",
+          "website": "library.com",
+          "imageurl": ""
+        },
+        {
+          "name": "Betty's Shoes",
+          "address": "987 Shoe ln",
+          "phone": "208-356-4173",
+          "website": "bettysshoe.com",
+          "imageurl": ""
+        },
+        {
+          "name": "Dan's Car Shop",
+          "address": "834 Vroom Vroom blv",
+          "phone": "208-360-0338",
+          "website": "danscars.com",
+          "imageurl": ""
+        },
+        {
+          "name": "Daisy's Bridal Dresses",
+          "address": "934 Marriage ln",
+          "phone": "208-496-7957",
+          "website": "bridaldress.com",
+          "imageurl": ""
+        } 
+    ]
+}

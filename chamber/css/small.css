@@ -230,14 +230,14 @@ footer img{
 }
 
 /*----------------*/
-/* Directory Page */
+/* Discover Page */
 /*----------------*/
-#main-directory{
+#main-discover{
     display: flex;
     flex-direction: column;
 }
 
-#main-directory img:hover{
+#main-discover img:hover{
     box-shadow: 0px 0px 10px black;
 }
 

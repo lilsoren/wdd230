@@ -53,7 +53,8 @@
             <nav>
                 <!--navigation links-->
                 <ul id="navigation">
-                    <li><a href="index.html">Discover</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="#">Contact</a></li>
@@ -67,34 +68,35 @@
 
     <main id="main-join">
         <div id="div-join">
-            <form action="#" name="my-form" method="get">
+            <form action="thankyou.html" name="my-form" method="get">
                 <section class="form-box">
-                    <label for="first">First Name</label>
-                    <input type="text" id="first" name="first" placeholder="First Name">
+                    <label for="first">First *</label>
+                    <input type="text" id="first" name="first" placeholder="First Name" required>
                 </section>
                 <section class="form-box">
-                    <label for="last">Last Name</label>
-                    <input type="text" id="last" name="last" placeholder="Last Name">
+                    <label for="last">Last  *</label>
+                    <input type="text" id="last" name="last" placeholder="Last Name" required>
                 </section>
                 <section class="form-box">
-                    <label for="position">Busines Position</label>
+                    <label for="position">Position</label>
                     <input type="position" id="position" name="position" placeholder="Busines Position" pattern="[- A-Za-z]" minlength="7"> <!--only accepts alpha charachers, hyphens, and spaces, minimun of seven characters using regular expression pattern-->
                 </section>
                 <section class="form-box">
-                    <label for="email">Email*</label>
+                    <label for="email">Email *</label>
                     <input type="email" id="email" name="email" placeholder="user@gmail.com" required>
                 </section>
                 <section class="form-box">
-                    <label for="phone">Phone</label>
+                    <label for="phone">Phone *</label>
                     <input type="tel" name="phone" id="phone" placeholder="___-___-____" required>
                 </section>
                 <section class="form-box">
-                    <label for="busines">Busines Name</label>
+                    <label for="busines">Busines  *</label>
                     <input type="text" id="busines" name="busines" placeholder="Busines Name" required>
                 </section>
                 <section class="form-box">
                     <label for="membership">Membership Level</label>
                     <select name="membership" id="membership">
+                        <option value="select">-Select-</option>
                         <option value="NP">Non Profit</option>
                         <option value="bronze">Bronze</option>
                         <option value="silver">Silver</option>
@@ -110,7 +112,7 @@
                     <!--hidden field that contains the current date and time that the form was loaded by the user-->
                 </section>
                 <section class="form-box">
-                    <button id="btnSend" action="thankyou.html">Send</button>
+                    <button id="btnSend">Send</button>
                 </section>
             </form>
         </div>

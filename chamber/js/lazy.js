@@ -83,15 +83,27 @@ const dayTimeDif = hourTimeDif / 24;
 
 
 console.log(dayTimeDif | 0, !prevTime);
-lastVisitedDisplay.textContent = setLastTimeVisited(dayTimeDif | 0, !prevTime);
+lastVisitedDisplay.textContent = setLastTimeVisited(dayTimeDif, hourTimeDif, minTimeDif, secTimeDif, !prevTime);
 
-function setLastTimeVisited(dayTimeDif, firstTime){
+function setLastTimeVisited(dayTimeDif, hourTimeDif, minTimeDif, secTimeDif, firstTime){
+    let duration = null;
     if (firstTime){
         return "Welcome! This is your first visit.";
     } 
-    else{
-        return "Welcome! It has been " + dayTimeDif + " day(s) since your last visit.";
+    else if (dayTimeDif > 1){
+        duration = Math.floor(dayTimeDif) + " day(s)";
     }
+    else if (hourTimeDif > 1){
+        duration = Math.floor(hourTimeDif) + " hour(s)";
+    }
+    else if (minTimeDif > 1){
+        duration = Math.floor(minTimeDif) + " minute(s)";
+    }
+    else if (secTimeDif > 1){
+        duration = Math.floor(secTimeDif) + " second(s)";
+    }
+        return "Welcome! It has been " + duration + " since your last visit.";
+    
 }
 
 function setCookie(cname, cvalue, exdays) {

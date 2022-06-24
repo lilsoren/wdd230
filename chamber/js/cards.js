@@ -44,21 +44,31 @@ function displayProphets(prophet) {
     // create elements to add to the document
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
+    let p1 = document.createElement('p');
+    let p2 = document.createElement('p');
     let portrait = document.createElement('img');
+    
 
     // change the text content property of the h2 element to contain the prophets full name
-    h2.textContent = prophet.name + ' ' + prophet.lastname;
+    h2.textContent = `${prophet.name} ${prophet.lastname}`;
 
     // build the image attributes bu using the set attribute method for the src, allt, and loading attribute values
     portrait.setAttribute('src', prophet.imageurl);
     portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${creatnth(prophet.order)} Latter-day President`);
     portrait.setAttribute('loading', 'lazy');
 
+    // chamge the text content of property of the h1 element to contain the prophet info
+    p1.textContent = `Birth: ${prophet.birthdate}`;
+    p2.textContent = `Death: ${prophet.death}`;
+
     // append the seciton with the h2 element 
     card.appendChild(h2);
+    card.appendChild(p1);
+    card.appendChild(p2);
     card.appendChild(portrait);
+    
 
     // append the existing HTML div with the cards class with the section
-    document.querySelector('div.cards').appendChild(card);
+    document.querySelector('section.cards').appendChild(card);
 }
 

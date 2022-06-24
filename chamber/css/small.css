@@ -149,6 +149,9 @@ main div, .spotlights{
     font-size: 20px;
     z-index: -1;
 }
+h3{
+    font-family: Raleway;
+}
 
 p{
     z-index: 1;
@@ -262,6 +265,11 @@ footer img{
     margin: 0;
 }
 
+#memberships p{
+    text-align: left;
+    padding: 12px;
+}
+
 /* Form */
 select, option, input, label, button{
     padding: 0.2rem 1rem;
@@ -275,14 +283,10 @@ select, option, input, label, button{
 .form-box label{
     display: none;
 }
-.form-box input, 
-.form-box select, 
 .form-box textarea{
     flex-basis: 100%;
 }
-.form-box button{
 
-}
 
 /*----------------*/
 /* Thank You Page */
@@ -293,3 +297,35 @@ select, option, input, label, button{
     align-items: center;
     justify-content: center;
 }
+
+
+
+/*----------------*/
+/* Directory Page */
+/*----------------*/
+#content {
+    width: 100%;
+    margin: 0 auto;
+    }
+    .cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;;
+    }
+    .cards section {
+    border: 2px solid var(--orange);
+    background-color: var(--light-blue);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    }
+    h2, h1 {
+    color: navy;
+    text-align: center;
+    }
+    .cards img {
+    width: 90%;
+    box-shadow: 5px 10px 8px 5px #888888;
+    }

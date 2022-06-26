@@ -1,27 +1,12 @@
 // store the URL of the JSON file into a const variable
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'json/data.json';
 const cards = document.querySelector('.cards');
 
 // basic fetch() and feed it requiered argument 
 //  the .then() returns a Promise 
 // the seconds .then() is setup for us to work with the converted responce data in javascript object format 
 
-function creatnth(order){
-    let suffix = '';
-    if (order == 1) 
-    suffix = 'st';
 
-    else if (order == 2)
-    suffix = 'nd';
-    
-    else if (order == 3)
-    suffix = 'rd';
-
-    else
-    suffix = 'th';
-
-    return `${order}${suffix}`;
-}
 
 fetch(requestURL)
 
@@ -32,43 +17,75 @@ fetch(requestURL)
     .then(function (jsonObject) {
 
         // store the results of the converted response into an array 
-        const prophets = jsonObject['prophets'];
+        const companies = jsonObject['cards'];
 
         // loop through every record and process each one into its own 'card' (HTML output)in a function named "displayProphets"
-        prophets.forEach(displayProphets);
+        companies.forEach(displayCompanies);
         
     });
 
 
-function displayProphets(prophet) {
+function displayCompanies(company) {
     // create elements to add to the document
     let card = document.createElement('section');
-    let h2 = document.createElement('h2');
+    let h3 = document.createElement('h3');
+    let portrait = document.createElement('img');
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
-    let portrait = document.createElement('img');
+    let p3 = document.createElement('p');
+    let p4 = document.createElement('p');
+    
     
 
     // change the text content property of the h2 element to contain the prophets full name
-    h2.textContent = `${prophet.name} ${prophet.lastname}`;
+    h3.textContent = `${company.name}`;
 
     // build the image attributes bu using the set attribute method for the src, allt, and loading attribute values
-    portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${creatnth(prophet.order)} Latter-day President`);
+    portrait.setAttribute('src', company.imageurl);
+    portrait.setAttribute('alt', `Company image of ${company.name}`);
     portrait.setAttribute('loading', 'lazy');
 
     // chamge the text content of property of the h1 element to contain the prophet info
-    p1.textContent = `Birth: ${prophet.birthdate}`;
-    p2.textContent = `Death: ${prophet.death}`;
+    p1.textContent = `Address: ${company.address}`;
+    p1.classList.add("address");
+    p2.textContent = `Phone: ${company.phone}`;
+    p2.classList.add("phone");
+    p3.textContent = `Website: ${company.website}`;
+    p4.textContent = `Membership: ${company.membership}`;
+
+
 
     // append the seciton with the h2 element 
-    card.appendChild(h2);
+    card.appendChild(h3);
+    card.appendChild(portrait);
     card.appendChild(p1);
     card.appendChild(p2);
-    card.appendChild(portrait);
+    card.appendChild(p3);
+    card.appendChild(p4);
     
 
     // append the existing HTML div with the cards class with the section
     document.querySelector('section.cards').appendChild(card);
+}
+
+// display cards as grid and list
+const gridbutton = document.querySelector("#grid-button");
+const listbutton = document.querySelector("#list-button");
+const display = document.querySelector(".cards");
+console.log(display);
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("cardsgrid");
+	display.classList.remove("cardslist");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("cardslist");
+	display.classList.remove("cardsgrid");
 }
 

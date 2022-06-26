@@ -121,6 +121,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+    .cardslist section img {
+        display: revert;
+        width: 75px;
+        order: -1;
+    }
 
     /*----------------*/
     /* Join Page */

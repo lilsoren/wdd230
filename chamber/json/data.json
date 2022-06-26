@@ -5,63 +5,72 @@
           "address": "123 Paige ln",
           "phone": "208-351-0225",
           "website": "planter.com",
-          "imageurl": ""
+          "imageurl": "images/plant.webp",
+          "membership": "Bronze"
         },
         {
           "name": "Chad's Sunny G's",
           "address": "456 Chad st",
           "phone": "208-356-4173",
           "website": "sunnyg.com",
-          "imageurl": ""
+          "imageurl": "images/sunglasses.webp",
+          "membership": "Bronze"
         },
         {
           "name": "Taco Tuesday",
           "address": "678 Taco ct",
           "phone": "208-359-8726",
           "website": "taco.com",
-          "imageurl": ""
+          "imageurl": "images/taco.webp",
+          "membership": "Silver"
         },
         {
           "name": "Car Wash Wednesday",
           "address": "987 Washer ln.",
           "phone": "208-360-0338",
           "website": "carwash.com",
-          "imageurl": ""
+          "imageurl": "images/car.webp",
+          "membership": "Bronze"
         },
         {
           "name": "Thirsty Thursday Soda Shop",
           "address": "654 Soft Drink st",
           "phone": "208-390-9040",
           "website": "soda.com",
-          "imageurl": ""
+          "imageurl": "images/soda.webp",
+          "membership": "Gold"
         },
         {
           "name": "Fictional Friday Library",
           "address": "486 Book ln",
           "phone": "208-656-1454",
           "website": "library.com",
-          "imageurl": ""
+          "imageurl": "images/read.webp",
+          "membership": "Non-Profit"
         },
         {
-          "name": "Betty's Shoes",
-          "address": "987 Shoe ln",
+          "name": "Code A Block",
+          "address": "987 Coder ln",
           "phone": "208-356-4173",
-          "website": "bettysshoe.com",
-          "imageurl": ""
+          "website": "codeablock.com",
+          "imageurl": "images/computer.webp",
+          "membership": "Gold"
         },
         {
-          "name": "Dan's Car Shop",
-          "address": "834 Vroom Vroom blv",
+          "name": "Full-of-Love Food Drive",
+          "address": "834 Give Back blv",
           "phone": "208-360-0338",
-          "website": "danscars.com",
-          "imageurl": ""
+          "website": "fulloflovefood.com",
+          "imageurl": "images/food.webp",
+          "membership": "Non-Profit"
         },
         {
-          "name": "Daisy's Bridal Dresses",
-          "address": "934 Marriage ln",
+          "name": "Lawn and Services",
+          "address": "934 Grass ln",
           "phone": "208-496-7957",
-          "website": "bridaldress.com",
-          "imageurl": ""
+          "website": "lawnandservices.com",
+          "imageurl": "images/lawn.webp",
+          "membership": "Silver"
         } 
     ]
 }

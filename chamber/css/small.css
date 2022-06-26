@@ -307,13 +307,13 @@ select, option, input, label, button{
     width: 100%;
     margin: 0 auto;
     }
-    .cards {
+    .cardsgrid {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;;
     }
-    .cards section {
+    .cardsgrid section {
     border: 2px solid var(--orange);
     background-color: var(--light-blue);
     padding: 30px;
@@ -321,11 +321,121 @@ select, option, input, label, button{
     width: 300px;
     margin: 20px;
     }
-    h2, h1 {
-    color: navy;
-    text-align: center;
+    .cardsgrid section:hover{
+    box-shadow: 5px 5px 9px 3px #888888;
     }
-    .cards img {
+    
+    .cardsgrid img {
     width: 90%;
-    box-shadow: 5px 10px 8px 5px #888888;
     }
+
+    .cardslist {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;;
+        }
+        .cardslist section {
+        border: 2px solid var(--orange);
+        background-color: var(--light-blue);
+        padding: 30px;
+        text-align: center;
+        width: 95%;
+        margin: 20px;
+        }
+        .cardslist section:hover{
+        box-shadow: 5px 5px 9px 3px #888888;
+        }
+        
+        .cardslist img {
+        width: 90%;
+        }
+    /*---------testing for grid/list----------*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    main {
+        /* margin: 0 auto;
+        padding: 0.5rem;
+        max-width: 700px; */
+    }
+    
+    
+    .menu button {
+        padding: 1rem;
+    }
+    
+    
+    
+    section {
+        padding: 0.5rem;
+    }
+    
+    /* .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        align-items: center;
+    } */
+    
+    /* .list {
+        display: flex;
+        flex-direction: column;
+    } */
+    
+    .cardslist section {
+        display: flex;
+        align-items: center;
+    }
+    
+    .cardsgrid section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cardsgrid section > * {
+        margin: 0.1rem;
+    }
+    
+    .cardslist section {
+        flex-direction: row;
+        justify-content: left;
+    }
+    
+    .cardslist section > * {
+        margin: 0 1rem;
+        text-align: left;
+    }
+    
+    .cardslist section img {
+        display: none; /* smaller viewports only */
+    }
+    .cardslist section .phone {
+        display: none;
+    }
+    .cardslist section .address {
+        display: none;
+    }
+    
+    section h3 {
+        font-size: 1.5rem;
+    }
+    
+    section a {
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 0.9rem;
+    }
+    
+    img {
+        max-width: 100%; /* Images are jerks - Seattle*/
+    }
+    
+    @media (min-width: 700px) {
+        .list section img {
+            display: block;
+        }
+    }
+    

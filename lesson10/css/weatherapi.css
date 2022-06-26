@@ -1,7 +1,7 @@
 body{
     text-align: center;
-    background-color: black;
-    color: #fff;
+    background-color: #fff;
+    color: black;
 }
 #current-temp{
    font-weight: bold;
@@ -16,9 +16,9 @@ h1{
 }
 @-webkit-keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #437ac9, 0 0 40px #e60073, 0 0 50px #437ac9, 0 0 60px #437ac9, 0 0 70px #437ac9;
     }
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      text-shadow: 0 0 20px #fff, 0 0 30px #3e50f1, 0 0 40px #3e50f1, 0 0 50px #3e50f1, 0 0 60px #3e50f1, 0 0 70px #3e50f1, 0 0 80px #3e50f1;
     }
   }

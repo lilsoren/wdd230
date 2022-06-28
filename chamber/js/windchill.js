@@ -32,7 +32,7 @@ const windChill = document.querySelector('#feels-like');
 
 //API URL with arguments  
 // id for fairbanks alaska is 5861897
-const url = 'http://api.openweathermap.org/data/2.5/weather?id=5861897&appid=d10750740ac29f4c233177823a633962';
+const url = 'https://api.openweathermap.org/data/2.5/weather?id=5861897&appid=d10750740ac29f4c233177823a633962';
 
 
 fetch(url)

@@ -34,7 +34,6 @@
     .event-weather{
     flex-direction: column;
     margin: inherit;
-    display: inherit;
     column-gap: inherit;  
     }
 
@@ -72,7 +71,7 @@
     }
 
     #news{
-        min-height: 200px;
+        min-height: 232px;
     } 
 
     /* spotlights */
@@ -89,6 +88,7 @@
         flex-direction: column;
         height: 704px;
         row-gap: 1em;
+        margin: 5px;
     }
 
     #spot-1, #spot-2, #spot-3{
@@ -97,15 +97,12 @@
         display: revert;
         width: inherit;
         margin: 0px; 
-        padding: 0px; 
         height: 50%;
     }
 
     #spot-1 img, #spot-2 img, #spot-3 img{
         position: relative;
         z-index: -2;
-        margin-top: -35px;
-        margin-bottom: -30px;
         height: 80px;
         width: auto;
     }

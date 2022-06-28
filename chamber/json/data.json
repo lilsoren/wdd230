@@ -21,7 +21,7 @@
           "address": "678 Taco ct",
           "phone": "208-359-8726",
           "website": "taco.com",
-          "imageurl": "images/taco.webp",
+          "imageurl": "images/taco_1.webp",
           "membership": "Silver"
         },
         {
@@ -45,7 +45,7 @@
           "address": "486 Book ln",
           "phone": "208-656-1454",
           "website": "library.com",
-          "imageurl": "images/read.webp",
+          "imageurl": "images/read_1.webp",
           "membership": "Non-Profit"
         },
         {

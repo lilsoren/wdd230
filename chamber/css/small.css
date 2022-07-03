@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+  }
 /* setting the colors */
 :root {
     --orange: #e05726;
@@ -188,11 +191,12 @@ main{
 
 }
 
-#hero img{
+ #hero img{
     width: 100%;
     height: 100%;
     margin: 0px;
-}
+} 
+
 
 /* weather */
 #weather{
@@ -355,35 +359,22 @@ select, option, input, label, button{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }    
+    .menu{
+        margin-left: 37%;
     }
-    
-    main {
-        /* margin: 0 auto;
-        padding: 0.5rem;
-        max-width: 700px; */
-    }
-    
-    
     .menu button {
+        
         padding: 1rem;
+        background-color: var(--blue);
+        border: none;
+        font-size: 1.5rem;
+        color: white;
+        align-items: center;
     }
-    
-    
-    
     section {
         padding: 0.5rem;
     }
-    
-    /* .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        align-items: center;
-    } */
-    
-    /* .list {
-        display: flex;
-        flex-direction: column;
-    } */
     
     .cardslist section {
         display: flex;

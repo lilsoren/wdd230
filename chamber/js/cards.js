@@ -72,7 +72,6 @@ function displayCompanies(company) {
 const gridbutton = document.querySelector("#grid-button");
 const listbutton = document.querySelector("#list-button");
 const display = document.querySelector(".cards");
-console.log(display);
 
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 

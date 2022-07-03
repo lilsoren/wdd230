@@ -4,7 +4,6 @@ function toggleMenu(){
 }
 
 const x = document.getElementById('hamburger');
-console.log('x', x);
 x.onclick = toggleMenu;
 
 

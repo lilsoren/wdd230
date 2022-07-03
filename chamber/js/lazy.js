@@ -11,7 +11,6 @@ const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
     image.onLoad = () => {
         image.removeAttribute('data-src');
-        console.log('just loaded', image.getAttribute('src'));
     };
 };
 
@@ -45,7 +44,7 @@ else{
 //initialize display elements
 // const todayDisplay = document.querySelector(".today");
 // const visitsDisplay = document.querySelector(".visits");
-const lastVisitedDisplay = document.querySelector(".lastVisited");
+
 
 // console.log(todayDisplay, visitsDisplay, lastVisitedDisplay);
 // // get teh stored value in local storage
@@ -68,7 +67,7 @@ const lastVisitedDisplay = document.querySelector(".lastVisited");
 // // show todays date
 // todayDisplay.textContent = Date.now();
 
-
+const lastVisitedDisplay = document.querySelector(".lastVisited");
 
 const cookie1 = "lastTimeVisited";
 const prevTime = getCookie(cookie1);
@@ -82,7 +81,6 @@ const hourTimeDif = minTimeDif / 60;
 const dayTimeDif = hourTimeDif / 24;
 
 
-console.log(dayTimeDif | 0, !prevTime);
 lastVisitedDisplay.textContent = setLastTimeVisited(dayTimeDif, hourTimeDif, minTimeDif, secTimeDif, !prevTime);
 
 function setLastTimeVisited(dayTimeDif, hourTimeDif, minTimeDif, secTimeDif, firstTime){

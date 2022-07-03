@@ -62,7 +62,7 @@
           "phone": "208-360-0338",
           "website": "fulloflovefood.com",
           "imageurl": "images/food.webp",
-          "membership": "Non-Profit"
+          "membership": "Gold"
         },
         {
           "name": "Lawn and Services",
@@ -70,7 +70,7 @@
           "phone": "208-496-7957",
           "website": "lawnandservices.com",
           "imageurl": "images/lawn.webp",
-          "membership": "Silver"
+          "membership": "Gold"
         } 
     ]
 }

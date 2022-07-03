@@ -38,7 +38,6 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?id=5861897&appid=d1
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data); // this is temporary for development only
     let k = data.main.temp;
     f = ((k-273.15) * (9/5) + 32).toFixed(0);
     currentTemp.textContent = f;
